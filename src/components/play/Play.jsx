@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../css/play.css";
 const Play = () => {
   const [preference, setPreference] = useState({
@@ -26,7 +27,7 @@ const Play = () => {
             }}
             id=""
           />
-          <span style={{ position: "absolute", right: '-2rem' }}>
+          <span style={{ position: "absolute", right: "-2rem" }}>
             {preference.numberofgames}
           </span>
         </div>
@@ -47,12 +48,26 @@ const Play = () => {
             }}
             id=""
           />
-          <span style={{ position: "absolute", right: '-2rem' }}>
+          <span style={{ position: "absolute", right: "-2rem" }}>
             {preference.timepergame}s
           </span>
         </div>
       </div>
-      <button style={{marginTop:'4rem',fontSize:'1.1rem',color:'white'}}>Play</button>
+      <Link
+        to={{
+          pathname: "/start",
+          state: {
+            games: preference.numberofgames,
+            time: preference.timepergame,
+          },
+        }}
+      >
+        <button
+          style={{ marginTop: "4rem", fontSize: "1.1rem", color: "white" }}
+        >
+          Play
+        </button>
+      </Link>
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.game{
+    padding: 2rem 4rem;
+}
+.game-center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.timer-container{
+    height: 10rem;
+    width: 10rem;
+}
