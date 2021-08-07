@@ -18,10 +18,10 @@ const Game = () => {
   const [maxTime, setMaxTime] = useState(5);
   const [isBreak, setIsBreak] = useState(true);
   const getQuestion = () => {
-    fetch("https://api.kanye.rest/")
+    fetch("https://rapid-fire-server.herokuapp.com/")
       .then((res) => res.json())
       .then((result) => {
-        setQuestion(result.quote);
+        setQuestion(result.question);
       });
   };
 
