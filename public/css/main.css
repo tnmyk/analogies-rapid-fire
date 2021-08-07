@@ -51,6 +51,20 @@ button {
   width: 90%;
   margin: 2rem auto;
 }
+footer{
+  position: absolute;
+  font-size: 0.85rem;
+  color: gray;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+.portfolio-link{
+  color:#CE1836;
+  font-weight: 500;
+}
+.portfolio-link:hover{
+  text-decoration: underline;
+}
 .intro-flex{
   display: flex;
 }
