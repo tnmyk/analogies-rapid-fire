@@ -7,8 +7,8 @@ const Play = () => {
     timepergame: 30,
   });
   return (
-    <div class="play">
-      <h1 class="play-h1">Play game now!</h1>
+    <div className="play">
+      <h1 className="play-h1">Play game now!</h1>
       <p>Choose your preferences before starting</p>
       <div style={{ marginTop: "2.5rem" }}>
         <div className="preference-container">
