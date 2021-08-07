@@ -5,13 +5,12 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 const Game = () => {
   const history = useHistory();
-  // const { games, time } = useParams();
   const location = useLocation();
+  const [interval, setInter] = useState();
   if (location.state) {
     var games = location.state.games;
     var time = location.state.time;
-  }
-  else history.push('/play')
+  } else history.push("/play");
 
   const [currentGame, setCurrentGame] = useState(0);
   const [question, setQuestion] = useState("Get ready!");
@@ -25,17 +24,24 @@ const Game = () => {
         setQuestion(result.quote);
       });
   };
+
   useEffect(() => {
-    if (currentGame === games) {
+    if (currentGame === Number(games)) {
+      clearInterval(interval);
       return history.push("/finish", { done: games });
     }
     // eslint-disable-next-line
   }, [currentGame]);
   useEffect(() => {
-    setInterval(() => {
-      setTimer((prev) => setTimer(prev - 1));
-    }, 1000);
+    setInter(
+      setInterval(() => {
+        setTimer((prev) => setTimer(prev - 1));
+      }, 1000)
+    );
     getQuestion();
+    // return () => {
+    //   clearInterval(interval);
+    // };
   }, []);
   useEffect(() => {
     if (timer < 0) {
