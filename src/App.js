@@ -16,8 +16,13 @@ const App = () => {
           <Route exact path="/start" component={Game} />
         </Switch>
         <footer>
-          Made by {" "}
-          <a className='portfolio-link' href="" target="_blank">
+          Made by{" "}
+          <a
+            className="portfolio-link"
+            href="https://tanmay.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Tanmay Kachroo
           </a>
         </footer>
