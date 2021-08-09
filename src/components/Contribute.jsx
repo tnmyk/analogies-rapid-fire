@@ -8,10 +8,14 @@ const Contribute = () => {
         <h2 className="contribute-heading">Contribute to this project </h2>
         <div>Help me with adding questions</div>
         <form
-        className='contribute-form'
+          className="contribute-form"
           onSubmit={(e) => {
             e.preventDefault();
-            if(data.name.trim().length===0 || data.question.trim().length===0) return;
+            if (
+              data.name.trim().length === 0 ||
+              data.question.trim().length === 0
+            )
+              return;
             fetch("http://localhost:8000/new", {
               method: "POST",
               headers: {
@@ -19,7 +23,7 @@ const Contribute = () => {
               },
               body: JSON.stringify(data),
             });
-            setData(prev=>({...prev,'question':''}))
+            setData((prev) => ({ ...prev, question: "" }));
           }}
           // action="https://rapid-fire-server.herokuapp.com/new"
         >
@@ -27,7 +31,6 @@ const Contribute = () => {
             type="text"
             name="name"
             value={data.name ? data.name : ""}
-          
             id=""
             placeholder="Name"
             onChange={(e) => {
@@ -47,6 +50,13 @@ const Contribute = () => {
 
           <button>Send</button>
         </form>
+        <h2>Top contributers 🏆</h2>
+        <ol className='contributers-list'>
+          <li>Tanmay Kachroo - 20 contributes</li>
+          <li>Tanmay Kachroo - 20 contributes</li>
+          <li>Tanmay Kachroo - 20 contributes</li>
+          <li>Tanmay Kachroo - 20 contributes</li>
+        </ol>
       </div>
       <div className="contribute-image">
         <img src="/images/contribute.svg" alt="" />

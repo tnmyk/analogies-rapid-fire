@@ -21,8 +21,9 @@
 .contribute-form{
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin-top: 2rem;
+  width: 60%;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
 }
 input[type='text']{
   margin-bottom: 1rem;
@@ -30,4 +31,9 @@ input[type='text']{
   border: none;
   border: 1px solid gray;
   border-radius: 20px ;
+}
+.contributers-list li{
+  margin-left: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
 }
