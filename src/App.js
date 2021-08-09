@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import Contribute from "./components/Contribute";
 const App = () => {
   return (
-    <div>
+    <div style={{position:'relative',minHeight:'100vh',paddingBottom:'2rem'}}>
       <Router>
         <Navbar />
         <Switch>
@@ -17,18 +17,18 @@ const App = () => {
           <Route exact path="/play" component={Play} />
           <Route exact path="/start" component={Game} />
         </Switch>
-        <footer>
-          Made by{" "}
-          <a
-            className="portfolio-link"
-            href="https://tanmay.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Tanmay Kachroo
-          </a>
-        </footer>
       </Router>
+      <footer>
+        Made by{" "}
+        <a
+          className="portfolio-link"
+          href="https://tanmay.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Tanmay Kachroo
+        </a>
+      </footer>
     </div>
   );
 };
