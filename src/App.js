@@ -4,6 +4,7 @@ import Play from "./components/play/Play";
 import Game from "./components/game/Game";
 import Finish from "./components/Finish";
 import Home from "./components/Home";
+import Contribute from "./components/Contribute";
 const App = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/contribute" component={Contribute} />
           <Route exact path="/finish" component={Finish} />
           <Route exact path="/play" component={Play} />
           <Route exact path="/start" component={Game} />
