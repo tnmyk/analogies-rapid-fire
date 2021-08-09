@@ -18,8 +18,8 @@ const Game = () => {
   const [maxTime, setMaxTime] = useState(5);
   const [isBreak, setIsBreak] = useState(true);
   const getQuestion = () => {
-    // const url = "https://rapid-fire-server.herokuapp.com/";
-    const url = "http://localhost:8000/";
+    const url = "https://rapid-fire-server.herokuapp.com/";
+    // const url = "http://localhost:8000/";
     fetch(url)
       .then((res) => res.json())
       .then((result) => {
