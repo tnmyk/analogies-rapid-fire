@@ -19,7 +19,7 @@ const Finish = () => {
         <div style={{ marginTop: "0.5rem" }}>
           Remember, practice makes perfect!
         </div>
-        <img draggable="false" src="/images/finish.svg" alt="" width="35%" />
+        <img draggable="false" src="/images/finish.svg" alt="" className='finish-image' />
         <Link to='/play'>
           <button
             style={{

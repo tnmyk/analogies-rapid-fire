@@ -9,6 +9,11 @@
 html {
   font-size: 16px;
 }
+.main {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
 nav {
   width: 100%;
   height: 4rem;
@@ -17,20 +22,21 @@ nav {
   justify-content: space-between;
   padding: 0 4rem;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-.logo{
+.logo {
   font-weight: 600;
   font-size: 1.1rem;
   margin-left: 0.6rem;
 }
-.nav-links a{
-    margin:0 1.3rem;
-    font-size: 0.8rem;
+.nav-links a {
+  margin: 0 1.3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
-.nav-links a:hover{
+.nav-links a:hover {
   text-decoration: underline;
 }
 button {
@@ -42,7 +48,7 @@ button {
   color: white;
 }
 
-.finish{
+.finish {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -50,44 +56,82 @@ button {
   padding: 2rem;
   padding-top: 4rem;
 }
+.finish-image{
+  width: 35%;
+}
 
-.home{
+.home {
   width: 90%;
   margin: 2rem auto;
 }
-footer{
+footer {
   position: absolute;
   font-size: 0.85rem;
   color: gray;
   bottom: 0.5rem;
   right: 1rem;
 }
-.portfolio-link{
-  color:#CE1836;
+.portfolio-link {
+  color: #ce1836;
   font-weight: 500;
 }
-.portfolio-link:hover{
+.portfolio-link:hover {
   text-decoration: underline;
 }
-.intro-flex{
+.intro-flex {
   display: flex;
 }
-.intro-text{
+.intro-text {
   /* background-color: red; */
   width: 80%;
 }
 
-.intro-image{
+.intro-image {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 25rem;
 }
-.intro-heading{
+.intro-heading {
   font-size: 3.7rem;
   margin-top: 3rem;
 }
-.intro-sub{
+.intro-sub {
   margin-top: 1rem;
   width: 70%;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .intro-flex {
+    flex-direction: column;
+  }
+  .intro-text {
+    width: 100%;
+    font-size: 90%;
+  }
+  .intro-heading {
+    font-size: 3rem;
+  }
+  .intro-image {
+    margin-top: 3rem;
+    min-height: 20rem;
+  }
+  nav {
+    padding: 0rem 1rem;
+  }
+  .nav-links a {
+    font-size: 0.75rem;
+    margin: 0 0.5rem;
+  }
+  .nav-links button {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .finish-image{
+    width:100%;
+  }
 }

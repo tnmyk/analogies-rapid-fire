@@ -6,7 +6,7 @@ const Contribute = () => {
     <div className="contribute">
       <div className="contribute-text">
         <h2 className="contribute-heading">Contribute to this project </h2>
-        <div>Help me with adding questions</div>
+        <div className='contribute-sub'>Help me with adding questions</div>
         <form
           className="contribute-form"
           onSubmit={(e) => {
@@ -59,7 +59,7 @@ const Contribute = () => {
         </ol>
       </div>
       <div className="contribute-image">
-        <img src="/images/contribute.svg" alt="" />
+        <img src="/images/contribute.svg" alt="" className='contribute-svg' />
       </div>
     </div>
   );

@@ -14,6 +14,7 @@
   justify-content: center;
   min-height: 25rem;
   width: 40%;
+  overflow: hidden;
 }
 .contribute-heading {
   font-size: 2.8rem;
@@ -36,4 +37,26 @@ input[type='text']{
   margin-left: 1rem;
   font-weight: 500;
   margin-top: 0.5rem;
+}
+@media screen and (max-width: 800px) {
+  .contribute{
+    flex-direction: column-reverse;
+  }
+  .contribute-text{
+    width: 100%;
+  }
+  .contribute-svg{
+    width: 100%;
+  }
+  .contribute-image{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 10rem;
+  }
+  .contribute-sub{
+    margin-top: 1rem;
+  }
+  .contribute-form{
+    width: 90%;
+  }
 }

@@ -17,3 +17,8 @@
     height: 10rem;
     width: 10rem;
 }
+@media screen and (max-width: 800px) {
+    .game{
+        padding: 2rem 2rem;
+    }
+}

@@ -7,9 +7,8 @@ const Home = () => {
         <div className="intro-text">
           <h1 className="intro-heading">Improve your speaking skills</h1>
           <div className="intro-sub">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-            sunt harum asperiores, alias assumenda voluptatem nihil a aliquam
-            ipsa delectus.
+            Improve your speaking skills with gamified experience.
+            Make learning easier.
           </div>
           <Link to="/play">
             <button style={{ marginTop: "3rem", fontSize: "1.1rem" }}>
