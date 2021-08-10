@@ -16,7 +16,7 @@ const Contribute = () => {
               data.question.trim().length === 0
             )
               return;
-            fetch("http://localhost:8000/new", {
+            fetch("https://rapid-fire-server.herokuapp.com/new", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
