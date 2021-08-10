@@ -16,7 +16,7 @@ const Finish = () => {
             Goodjob! You completed {done === 1 ? "1 game" : done + " games"}!{" "}
           </h1>
         )}
-        <div style={{ marginTop: "0.5rem" }}>
+        <div style={{ marginTop: "1rem" }}>
           Remember, practice makes perfect!
         </div>
         <img draggable="false" src="/images/finish.svg" alt="" className='finish-image' />

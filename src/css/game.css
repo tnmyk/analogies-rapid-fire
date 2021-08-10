@@ -21,4 +21,7 @@
     .game{
         padding: 2rem 2rem;
     }
+    .game-center{
+        margin-top: 4rem;
+    }
 }
